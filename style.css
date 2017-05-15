@@ -1,0 +1,35 @@
+p {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  margin:auto;
+  font-family: 'Pacifico', cursive;
+}
+h1 {
+  color: white;
+  font-size: 30px;
+  font-weight: italic;
+  text-decoration: underline;
+  margin: auto;
+  font-family:'Kaushan Script', cursive;
+
+}
+
+body {
+  background-image: url(images/chalkboard.png);
+  background-repeat: no-repeat;
+
+  background-size: cover;
+}
+button {
+  color: white;
+  padding: 5px;
+  radius: 10px
+
+}
+form {
+  padding: 20px
+}
+form2 {
+  padding: 20px
+}

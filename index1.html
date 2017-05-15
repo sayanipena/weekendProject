@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title> My Awesome First Web Page </title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Pacifico" rel="stylesheet">
+  <script>
+      function msgBox (mystring) {
+        var greet = 'Welcome,'+ ' ' + mystring
+      alert(greet)
+    }
+      function DoProduct (mystring1, mystring2){
+        var answer = mystring1 * mystring2
+        alert(answer)
+      }
+      function GetCrazy (colorchoice) {
+        document.body.style.backgroundColor = colorchoice
+      }
+      function GetPreferences(colortype, colorchoice) {
+        if (colortype = 'word')
+              { document.body.style.backgroundColor = colorchoice
+              } else {
+               document.body.style.backgroundColor = '#' + colorchoice
+             }
+      }
+
+      /*  function DoProduct (mystring1, mystring2) {
+          var answer if (value = multiply)
+
+        };*/
+</script>
+</head>
+<body>
+<form>
+  <p> Please enter your name: </p>
+  <input name="box1" type="text" />
+  <input message="submit" type="button" value="Show Me"
+    onClick="msgBox (form.box1.value)" />
+
+</form>
+<form>
+    <p> Simple Math: </p>
+    <form name="form2">
+      <input name="num1" type="text" size="5"/><p> multiply by: </p>
+      <input name="num2" type="text" size="5"/>
+      <input name="submit2" type="button" value="Multiply"
+        onClick="DoProduct (form.num1.value, form.num2.value)" />
+ </form>
+
+  <h1> Color Choices </h1>
+ <form name ="form3">
+   <p>Make me: </p>
+    <input type="button" value="Red" onClick="GetCrazy('red')"/>
+    <input type="button" value="Yellow" onClick="GetCrazy('yellow')"/>
+    <input type="button" value="Green" onClick="GetCrazy('green')"/>
+    <input type="button" value="Blue" onClick="GetCrazy('blue')"/>
+ </form>
+ <h1>Color Picker </h1>
+ <form name="form4">
+ <p> Enter color as
+  <br>
+   Name <input name="colortype" type="radio" value="word" onClick="form4.temp.value='word'"/>
+   or Hex <input name="colortpye" tpye="radio" value="hex" onClick="form4.temp.values='hex'" />
+ </p>
+ <p>
+   Color: <input name="colorchoice" type="text" />
+   <input name="submit4" type="button"value="Do It" onClick="GetPreferences(form4.temp.value.form4.colorchoice.value)" />
+   <input type="hidden" name="temp" value="word" />
+</form>
+
+ </body>
+
+</html>
